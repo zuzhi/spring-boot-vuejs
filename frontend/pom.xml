@@ -42,7 +42,17 @@
 							<goal>npm</goal>
 						</goals>
 						<configuration>
-							<arguments>config set registry https://registry.npmjs.org</arguments>
+							<arguments>config set registry https://registry.npm.taobao.org</arguments>
+						</configuration>
+					</execution>
+					<!-- NPM Install Chromedriver -->
+					<execution>
+						<id>npm install chromedriver</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<configuration>
+							<arguments>install chromedriver --chromedriver_cdnurl=http://cdn.npm.taobao.org/dist/chromedriver</arguments>
 						</configuration>
 					</execution>
 					<!-- Set SSL privilege -->
